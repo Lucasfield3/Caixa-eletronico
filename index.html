@@ -19,13 +19,24 @@
         <input id="quantidade-5" type="text" placeholder="5 reais">
         <input id="quantidade-2" type="text" placeholder="2 reais">
         <button id="btn-calcular-notas" onclick="Calcular()">calcular notas</button>
+        <button id="btn-limpar">Limpar</button>
       </div>
       <div class="container-list">
+        <p id="quantia-max"></p>
         <ul id="list-result"></ul>
       </div>
     </div>
-    <script src="assets/js/notasBanco.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-3.5.0.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById('btn-limpar').onclick = ()=>{
+          const lista = document.getElementById('list-result')
+          const frase = document.getElementById('quantia-max')
+          lista.innerHTML = ''
+          frase.innerHTML = ''
+      }
+      
+    </script>
   </body>
+  <script src="assets/js/notasBanco.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-3.5.0.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
 </html>

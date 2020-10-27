@@ -19,11 +19,20 @@ html
                 input#quantidade-5(type="text" placeholder='5 reais')
                 input#quantidade-2(type="text" placeholder='2 reais')
                 button#btn-calcular-notas(onclick='Calcular()') calcular notas
+                button#btn-limpar Limpar
             div.container-list
+                p#quantia-max
                 ul#list-result
+        script.
+                document.getElementById('btn-limpar').onclick = ()=>{
+                    const lista = document.getElementById('list-result')
+                    const frase = document.getElementById('quantia-max')
+                    lista.innerHTML = ''
+                    frase.innerHTML = ''
+                }
        
-        script(src="assets/js/notasBanco.js")
-        script(type="text/javascript" src="assets/js/jquery-3.5.0.min.js")
-        script(type="text/javascript" src="assets/js/bootstrap.bundle.min.js")
+    script(src="assets/js/notasBanco.js")
+    script(type="text/javascript" src="assets/js/jquery-3.5.0.min.js")
+    script(type="text/javascript" src="assets/js/bootstrap.bundle.min.js")
 
        

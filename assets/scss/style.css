@@ -1181,6 +1181,16 @@ body {
   margin-bottom: 11rem;
 }
 
+#quantia-max {
+  position: absolute;
+  top: 2rem;
+  left: 25rem;
+}
+
+#list-result > {
+  margin-top: 4rem;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;

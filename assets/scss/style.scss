@@ -367,6 +367,15 @@ body{
     flex-direction: column;
     margin-bottom: 11rem;
 }
+
+#quantia-max{
+    position: absolute;
+    top: 2rem;
+    left: 25rem;
+}
+#list-result > {
+    margin-top: 4rem;
+}
 @import "../../bootstrap/scss/functions";
 @import "../../bootstrap/scss/variables";
 @import "../../bootstrap/scss/mixins";
