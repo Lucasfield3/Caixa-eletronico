@@ -42,18 +42,6 @@ body {
   margin-bottom: 11rem;
 }
 
-#quantia-max {
-  position: absolute;
-  top: 2rem;
-  left: 25rem;
-}
-
-#list-result {
-  position: absolute;
-  left: 25rem;
-  top: 8rem;
-}
-
 .container {
   width: 100%;
   padding-right: 15px;
