@@ -7,117 +7,24 @@
   </head>
   <body>
     <div class="container-lg">
-      <div class="ex1">
-        <div class="row">
-          <div class="nameDiv">
-            <p class="text">Nome:</p>
-            <input id="name" type="text">
-          </div>
-          <div class="last-nameDiv">
-            <p class="text">Sobrenome:</p>
-            <input id="last-name" type="text">
-          </div>
-        </div>
-        <button class="hello" value="exibir nome completo" onclick="saudacoes()">Saudação</button>
+      <div class="ex15">               
+        <input id="valor-saque" type="text" placeholder="valor do saque">
+        <p class="label-quantidades">insira as quantidades disponiveis</p>
+        <div class="column-quantias"></div>
+        <input id="quantidade-200" type="text" placeholder="200 reais">
+        <input id="quantidade-100" type="text" placeholder="100 reais">
+        <input id="quantidade-50" type="text" placeholder="50 reais">
+        <input id="quantidade-20" type="text" placeholder="20 reais">
+        <input id="quantidade-10" type="text" placeholder="10 reais">
+        <input id="quantidade-5" type="text" placeholder="5 reais">
+        <input id="quantidade-2" type="text" placeholder="2 reais">
+        <button id="btn-calcular-notas" onclick="Calcular()">calcular notas</button>
       </div>
-      <div class="ex2">
-        <div class="lampada"><img id="lampada" src="assets/image/Apagada.png"></div>
-        <div class="row">
-          <button class="violet" value="exibir nome">acender</button>
-          <button class="strgreen" value="exibir nome">apagar</button>
-        </div>
-      </div>
-      <div class="ex3">
-        <button class="green" value="mudar pra cor verde" onclick="">Verde</button>
-        <button class="red" value="mudar pra cor vermelha" onclick="">Vermelho  </button>
-      </div>
-      <div class="ex4">
-        <div class="cpf1">
-          <p class="text">CPF:</p>
-          <input id="cpf" type="text" maxlength="11">
-          <button class="cpf" onclick="addInput()">exibir</button>
-        </div>
-        <div class="cpf2">
-          <p class="text">CPF(pontuação):</p>
-          <input id="cpf2" type="text" maxlength="14">
-          <button class="bcpf2" onclick="addInput2()">exibir</button>
-        </div>
-      </div>
-      <div class="ex5">
-        <p id="load"></p>
-        <button class="loaded">exibir</button>
-      </div>
-      <div class="row-ex6">
-        <input id="soma1" type="text" placeholder="0">
-        <button id="btn-soma">soma</button>
-        <input id="soma2" type="text" placeholder="0">
-        <div class="result">
-          <p class="col-result"> </p>
-        </div>
-      </div>
-      <div class="row-ex7">
-        <input id="desconto" type="text" placeholder="desconto">
-        <button id="btn-descontar">calcular desconto</button>
-        <input id="valor" type="text" placeholder="valor">
-        <div class="desconto">
-          <p class="col-desconto"></p>
-        </div>
-      </div>
-      <div class="row-ex8"> 
-        <p class="row-ex8-idade">Ano:</p>
-        <input id="idade" type="text">
-        <button id="btn-menorMaior">menor/maior</button>
-        <div class="age">
-          <p class="col-age"></p>
-        </div>
-      </div>
-      <div class="ex9">
-        <p id="repeat"></p>
-        <button class="repetir">exibir</button>
-      </div>
-      <div class="ex10">
-        <p id="tabuada"></p>
-        <input id="numero" type="text">
-        <button class="exibir">Mostrar tabuada</button>
-      </div>
-      <div class="ex11">
-        <p id="frase">
-          <p id="demo"></p>
-        </p>
-        <p id="frase2">
-          <p id="demo2"></p>
-        </p>
-        <button class="analisar">Analisar</button>
-      </div>
-      <div class="ex12">
-        <input class="num" type="text">
-        <button class="random">sortear</button>
-      </div>
-      <div class="ex13">
-        <p id="date"></p>
-        <button class="acao">data atual</button>
-      </div>
-      <div class="ex14">
-        <input id="seu-array" type="text">
-        <button class="tamanho">exibir</button>
-        <div class="pop-out">
-          <p class="col-vetor"></p>
-        </div>
+      <div class="container-list">
+        <ul id="list-result"></ul>
       </div>
     </div>
-    <script src="assets/js/saudacao.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/changeBack.js"></script>
-    <script src="assets/js/cpf.js"></script>
-    <script src="assets/js/window.js"></script>
-    <script src="assets/js/soma.js"></script>
-    <script src="assets/js/desconto.js"></script>
-    <script src="assets/js/idade.js"></script>
-    <script src="assets/js/tabuada.js"></script>
-    <script src="assets/js/frase.js"></script>
-    <script src="assets/js/sort.js"></script>
-    <script src="assets/js/data.js"></script>
-    <script src="assets/js/array.js"></script>
+    <script src="assets/js/notasBanco.js"></script>
     <script type="text/javascript" src="assets/js/jquery-3.5.0.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
   </body>

@@ -5,93 +5,24 @@ html
         meta(charset="utf-8" content="width=device-width,initial-scale=1,shrink-to-fit=no")
         link(rel="stylesheet" href="assets/scss/style.css")
     body
-        div.container-lg
-            div.ex1
-                div.row
-                    div.nameDiv
-                        p.text Nome:
-                        input#name(type="text")
-                    div.last-nameDiv
-                        p.text Sobrenome:
-                        input#last-name(type="text")     
-                button.hello(value="exibir nome completo" onclick="saudacoes()") Saudação
-            div.ex2
-                div.lampada
-                    img#lampada(src="assets/image/Apagada.png")
-                div.row
-                    button.violet(value="exibir nome") acender
-                    button.strgreen(value="exibir nome") apagar
-            div.ex3
-                button.green(value="mudar pra cor verde" onclick="") Verde
-                button.red(value="mudar pra cor vermelha" onclick="") Vermelho  
-            div.ex4
-                div.cpf1
-                    p.text CPF:
-                    input#cpf(type="text" maxlength="11")
-                    button.cpf(onclick="addInput()") exibir
-                div.cpf2
-                    p.text CPF(pontuação):
-                    input#cpf2(type="text" maxlength="14")
-                    button.bcpf2(onclick="addInput2()") exibir
-            div.ex5
-                p#load
-                button.loaded exibir
-            div.row-ex6
-                input#soma1(type="text" placeholder="0")
-                button#btn-soma soma
-                input#soma2(type="text" placeholder="0")
-                div.result
-                    p.col-result 
-            div.row-ex7
-                input#desconto(type="text" placeholder="desconto")
-                button#btn-descontar calcular desconto
-                input#valor(type="text" placeholder="valor")
-                div.desconto
-                    p.col-desconto
-            div.row-ex8 
-                p.row-ex8-idade Ano:
-                input#idade(type="text")
-                button#btn-menorMaior menor/maior
-                div.age
-                    p.col-age
-            div.ex9
-                p#repeat
-                button.repetir exibir
-            div.ex10
-                p#tabuada
-                input#numero(type="text")
-                button.exibir Mostrar tabuada
-            div.ex11
-                p#frase
-                    p#demo
-                p#frase2
-                    p#demo2
-                button.analisar Analisar
-            div.ex12
-                input.num(type="text")
-                button.random sortear
 
-            div.ex13
-                p#date
-                button.acao data atual
-            .ex14
-                input#seu-array(type="text")
-                button.tamanho exibir
-                .pop-out
-                    p.col-vetor
-        script(src="assets/js/saudacao.js")
-        script(src="assets/js/script.js")
-        script(src="assets/js/changeBack.js")
-        script(src="assets/js/cpf.js")
-        script(src="assets/js/window.js")
-        script(src="assets/js/soma.js")
-        script(src="assets/js/desconto.js")
-        script(src="assets/js/idade.js")
-        script(src="assets/js/tabuada.js")
-        script(src="assets/js/frase.js")
-        script(src="assets/js/sort.js")
-        script(src="assets/js/data.js")
-        script(src="assets/js/array.js")
+        .container-lg
+            div.ex15                
+                input#valor-saque(type="text" placeholder="valor do saque")
+                p.label-quantidades insira as quantidades disponiveis
+                .column-quantias
+                input#quantidade-200(type="text" placeholder='200 reais')
+                input#quantidade-100(type="text" placeholder='100 reais')
+                input#quantidade-50(type="text" placeholder='50 reais')
+                input#quantidade-20(type="text" placeholder='20 reais')
+                input#quantidade-10(type="text" placeholder='10 reais')
+                input#quantidade-5(type="text" placeholder='5 reais')
+                input#quantidade-2(type="text" placeholder='2 reais')
+                button#btn-calcular-notas(onclick='Calcular()') calcular notas
+            div.container-list
+                ul#list-result
+       
+        script(src="assets/js/notasBanco.js")
         script(type="text/javascript" src="assets/js/jquery-3.5.0.min.js")
         script(type="text/javascript" src="assets/js/bootstrap.bundle.min.js")
 

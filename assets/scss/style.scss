@@ -349,6 +349,24 @@ body{
         @include btnHover(#2eb34b, #2eb34b);
     }
 }
+.ex15{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    .column-quantias{
+        display: flex;
+        flex-direction: column;
+    }
+    .label-quantidades{
+        margin-bottom: 0;
+    }
+}
+.container-list{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 11rem;
+}
 @import "../../bootstrap/scss/functions";
 @import "../../bootstrap/scss/variables";
 @import "../../bootstrap/scss/mixins";
@@ -363,7 +381,7 @@ body{
 
 .container-lg{
     @include centralizar();
-    justify-content: space-around;
+    justify-content: start;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top:2%;
