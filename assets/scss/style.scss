@@ -30,8 +30,10 @@ body{
     top: 2rem;
     left: 25rem;
 }
-#list-result > {
-    margin-top: 4rem;
+#list-result {  
+    position: absolute;
+    left: 25rem;
+    top: 8rem;
 }
 @import "../../bootstrap/scss/functions";
 @import "../../bootstrap/scss/variables";

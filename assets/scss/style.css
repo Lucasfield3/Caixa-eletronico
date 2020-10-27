@@ -48,8 +48,10 @@ body {
   left: 25rem;
 }
 
-#list-result > {
-  margin-top: 4rem;
+#list-result {
+  position: absolute;
+  left: 25rem;
+  top: 8rem;
 }
 
 .container {
