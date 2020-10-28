@@ -38,7 +38,7 @@ function Calcular(){
         console.log(totalNotas)
         
             for(let i = 0; i < notas.length; i++){
-                if(valorInput > 0 && valorInput < totalNotas){
+                if(valorInput > 0 && valorInput <= totalNotas){
                     if((valorInput % 10) !== 1 && (valorInput % 10) !== 3 ){
                        
                         if(notas[i].quantidade > 0 && (notas[i].quantidade * notas[i].valor) >= valorInput){
