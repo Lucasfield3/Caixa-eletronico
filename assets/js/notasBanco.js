@@ -161,7 +161,7 @@ function Calcular(){
                         quantiMax.innerHTML = `não há esse valor exato`
                     }
                     
-                }else if(valorInput == '0'){
+                }else if(valorInput == 0){
                     break
                 }else{
                     console.log('essa quantia ultrapassa o valor máximo de ' + totalNotas)
