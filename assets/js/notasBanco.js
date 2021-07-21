@@ -62,7 +62,7 @@ function Calcular(){
                                     lista.appendChild(result)
                                     notas[i].quantidade = 0   
                                     valorInput = valorInput - notas[i].valor
-                                    console.log(valorInput)
+                                    console.log(valorInput) 
                                 }       
                                 
                             }
