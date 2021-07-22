@@ -163,7 +163,7 @@ function Calcular(){
                     
                 }else if(valorInput == 0){
                     break
-                }else{
+                }else if(valorInput > totalNotas ){
                     console.log('essa quantia ultrapassa o valor máximo de ' + totalNotas)
                     quantiMax.innerHTML = `essa quantia ultrapassa o valor máximo de: ${totalNotas}`
                 }
