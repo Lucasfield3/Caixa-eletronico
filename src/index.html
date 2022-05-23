@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caixa-eletronico</title>
+    <meta charset="utf-8" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="container-lg">
+      <div class="caixa-eletronico">               
+        <input id="valor-saque" type="text" placeholder="valor do saque">
+        <p class="label-quantidades">insira as quantidades disponiveis</p>
+        <div class="column-quantias"></div>
+        <input id="quantidade-200" type="text" placeholder="200 reais">
+        <input id="quantidade-100" type="text" placeholder="100 reais">
+        <input id="quantidade-50" type="text" placeholder="50 reais">
+        <input id="quantidade-20" type="text" placeholder="20 reais">
+        <input id="quantidade-10" type="text" placeholder="10 reais">
+        <input id="quantidade-5" type="text" placeholder="5 reais">
+        <input id="quantidade-2" type="text" placeholder="2 reais">
+        <button id="btn-calcular-notas" onclick="Calcular()">calcular notas</button>
+        <button id="btn-limpar">Limpar</button>
+      </div>
+      <div class="list">
+        <p id="quantia-max"></p>
+        <ul id="list-result"></ul>
+      </div>
+    </div>
+    <script>
+
+      document.getElementById('btn-limpar').onclick = ()=>{
+          const lista = document.getElementById('list-result')
+          const frase = document.getElementById('quantia-max')
+          lista.innerHTML = ''
+          frase.innerHTML = ''
+      }
+      
+    </script>
+  </body>
+  <script src="assets/js/notasBanco.js"></script>
+</html>
