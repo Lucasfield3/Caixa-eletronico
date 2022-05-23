@@ -3,11 +3,11 @@
   <head>
     <title>Caixa-eletronico</title>
     <meta charset="utf-8" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
     <div class="container-lg">
-      <div class="ex15">               
+      <div class="caixa-eletronico">               
         <input id="valor-saque" type="text" placeholder="valor do saque">
         <p class="label-quantidades">insira as quantidades disponiveis</p>
         <div class="column-quantias"></div>
@@ -27,6 +27,7 @@
       </div>
     </div>
     <script>
+
       document.getElementById('btn-limpar').onclick = ()=>{
           const lista = document.getElementById('list-result')
           const frase = document.getElementById('quantia-max')
